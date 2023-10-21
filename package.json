@@ -1,13 +1,20 @@
 {
-	"name": "dart_lint_fixer_plus",
+	"name": "dart-lint-fixer-plus",
 	"displayName": "DartLintFixerPlus",
 	"description": "Fix dart lints",
 	"version": "0.0.1",
+	"repository": "https://github.com/rohitsangwan01/dart_lint_fixer",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"activationEvents": [
+		"onCommand:dartLintFixer.fixAutoCommaFixer",
+		"onCommand:dartLintFixer.fixCustomCommaFixer",
+		"onCommand:dartLintFixer.fixRemoveUnusedImports",
+		"onCommand:dartLintFixer.fixNonConstantNames"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
